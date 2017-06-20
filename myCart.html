@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>购物车_顺电网上商城-高端家电购物商城，正品保障-支持送货上门货到付款</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/myCart.css"/>
+	<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/myCart.js" type="text/javascript" charset="utf-8"></script>
+	
+</head>
+<body>
+		<!-- header顶部 -->
+    <div id="header">
+        <div class="header-logo">
+            <h1><a href="index.html"><img src="images/cart_logo.png" alt=""></a></h1>   
+        	<div class="cart_title_cart">我的购物车</div>
+        	<div class="cart_title_text">网上购物从门店发货，18:00前购买，当天发货</div>
+        	<div class="cart_title_right">
+        		<div class="right_cart right_com">我的购物车</div>
+        		<div class="right_cent1 right_com"></div>
+        		<div class="right_order  right_com">填写核对订单</div>
+        		<div class="right_cent2 right_com"></div>
+        		<div class="right_success  right_com">成功提交订单</div>
+     	</div>
+        </div>
+    </div>
+   
+	<div id="cart">
+		<div class="cart_none" style="display: none;">
+			<p>
+				<img src="images/lanzi_03.jpg"/>
+			</p>
+			<div class="cart_none_right">
+				<p><b>您的购物车里还没有商品</b>，您可以：<br/>将<a href="#">收藏夹</a>中的商品添加进来，或者去看看 <a href="#">商城 »</a></p>
+			</div>
+			
+		</div>
+		<div class="cart_main">
+			<table class="goods_cart" cellspacing="0" cellpadding="0" >
+				<thead>
+					<tr>
+						<th><input class="allCheck" type="checkbox" /></th>
+						<th colspan="2">
+							<p style="float:left;width:32px;">全选</p>
+							<p style="width:343px;text-align: center;">商品名称</p>
+						</th>
+						<th>单价</th>
+						<th>优惠</th>
+						<th>数量</th>
+						<th>小计</th>
+						<th>积分</th>
+						<th>操作</th>					
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input class="cart_check" type="checkbox" /></td>
+						<td colspan="2">
+							<div class="cart_goods_img">
+								<img src="images/goods/b&o1.jpg"/>
+							</div>
+							<div class="cart_goods_title">
+								<a href="#">恩斯托（ENSTO）壁挂式电暖器 EPHBM15P.CN</a>
+							</div>
+							
+						</td>
+						<td>
+							<p class="cart_goods_price">$2999.00</p>
+						</td>
+						<td>
+							<p class="cart_goods_disprice">$0.00</p>
+						</td>
+						<td>
+							<div class="cart_num_box">
+								<div class="cart_goods_num">
+									<a class="num_sub" href="#">-</a>
+									<input type="text" value="1" />
+									<a class="num_add" href="#">+</a>
+								</div>
+								<span>有货</span>
+							</div>
+						</td>
+						<td>
+							<p class="cart_goods_addprice">$2999.00</p>
+						</td>
+						<td>
+							<p class="cart_goods_jf">-</p>
+						</td>
+						<td>
+							<div class="cart_play">
+								<a class="addlove" href="#">收藏</a>|<a class="delcart" href="#">删除</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>	
+				<tfoot>
+					<tr>
+						<td><input class="allCheck" type="checkbox" /></td>
+						<td colspan="7">
+							<div class="cart_bottom">
+								<p>全选</p>
+								<p>
+									<a href="#">凑单商品</a>
+									<a id="delSelect" href="#">删除选中商品</a>
+								</p>
+								<p class="cart_addNum">共<span class="all_num">4</span>件商品，已选择<span class="check_num">4</span>件</p>
+								<p>合计（不含运费）：<span class="total_price">￥25504.00</span>元</p>
+								<a href="index.html" class="cotinue_buy">继续购物</a>
+							</div>
+						</td>
+						<td><button>去结算</button></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td colspan="8">
+							<i>订单优惠金额：</i><b>￥0.00</b>
+						</td>
+					</tr>
+				</tfoot>
+			
+			
+			</table>
+		</div>
+		<div class="maybe_love">
+			<div class="maybe_title"><p>这些东西你可能会感兴趣</p></div>
+			<div class="maybe_love_num">
+				<ul class="maybe_love_num_list">
+					
+				</ul>
+			</div>
+			<div class="maybe_love_goods">
+				<ul class="maybe_love_list">
+					<!--<li>
+						<div class="goods_img">
+							<img src="images/goods/b&o1.jpg"/>
+						</div>
+						<div class="p_info">
+							<p class="info_title">魔声（Monster）蓝牙运动耳机(黑色) Isport Superslim</p>
+							<p class="info_price">￥599.00</p>
+							<a href="#">加入购物车</a>
+						</div>
+					</li>-->
+					
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+	</div>
+		
+		
+		
+		
+		
+	<!--  help  -->
+	<div id="help">
+		<div class="help-main">
+			<div class="help-item">
+				<img src="images/zp.png"/>
+				<p>正品保证</p>
+			</div>
+			<div class="help-item">
+				<img src="images/vip.png"/>
+				<p>会员独享</p>
+			</div>
+			<div class="help-item">
+				<img src="images/bao.png"/>
+				<p>全国联保</p>
+			</div>
+			<div class="help-item">
+				<img src="images/30.png"/>
+				<p>30天超长退货</p>
+			</div>
+			<div class="help-item">
+				<img src="images/Awesome-Projects.png"/>
+				<p>正规发票</p>
+			</div>
+		</div>
+	</div>
+	<!--  footer  -->
+	<div id="footer">
+		<div class="footer-tel">
+			<div class="footer-tel-item">
+				<h5>订购热线</h5>
+				<p class="tel-timer">订购服务时间: 08:30 - 17:30</p>
+				<p class="tel-num">400-8899-618</p>
+			</div>
+			<div class="footer-tel-item">
+				<h5>企业购热线</h5>
+				<p class="tel-timer">企业购热线时间: 09:00 - 17:30</p>
+				<p class="tel-num">0755-83286903</p>
+			</div>
+			<div class="footer-tel-item">
+				<h5>售后服务热线</h5>
+				<p class="tel-timer">售后热线时间: 09:00 - 22:00</p>
+				<p class="tel-num">400-6788-688</p>
+			</div>
+			<div class="footer-tel-item">
+				<h5>在线客服咨询</h5>
+				<p class="tel-timer">服务时间: 08:30 - 24:00</p>
+				<p class="tel-kf">在线客服 即时答疑</p>
+			</div>
+		</div>
+		<div class="footer-about">
+			<div class="footer-about-left">
+				<div class="footer-left-item">
+					<h5>新手指引</h5>
+					<ul>
+						<li><a href="#" style="font-weight: 100;">交易须知</a></li>
+						<li><a href="#">开具发票</a></li>
+						<li><a href="#">联系客服</a></li>
+						<li><a href="#">会员登录小贴士</a></li>
+					</ul>
+				</div>
+				<div class="footer-left-item">
+					<ul>
+						<li><a href="#">支付及配送</a></li>
+						<li><a href="#">在线支付</a></li>
+						<li><a href="#">汇款转账</a></li>
+						<li><a href="#">货到付款</a></li>
+						<li><a href="#">运费政策</a></li>
+						<li><a href="#">配送方式</a></li>
+					</ul>
+				</div>
+				<div class="footer-left-item">
+					<ul>
+						<li><a href="#">订单及售后</a></li>
+						<li><a href="#">订单说明</a></li>
+						<li><a href="#">退款说明</a></li>
+						<li><a href="#">售后政策</a></li>
+						<li><a href="#">售后申请</a></li>
+					</ul>
+				</div>
+				<div class="footer-left-item">
+					<ul>
+						<li><a href="#">关于顺电</a></li>
+						<li><a href="#">品牌故事</a></li>
+						<li><a href="#">投资者关系</a></li>
+						<li><a href="#">联系方式</a></li>
+						<li><a href="#">网站合作</a></li>
+						<li><a href="#">人才招聘</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-about-right">
+				<h5>门店体验店</h5>
+				<p>深圳市顺电连锁股份有限公司，是一家专门销售家用电器(包括手机、电脑、数码相机)的零售商。顺电每一家门店有以下特点:高品质商品、丰富选择、专业服务。</p>
+				<div class="footer-dq">
+					<a href="#"><span>北京</span></a><a href="#"><span>广州</span></a>
+					<a href="#"><span>上海</span></a><a href="#"><span>苏州</span></a>
+					<a href="#"><span>深圳</span></a><a href="#"><span>更多</span></a>
+				</div>
+			</div>		
+		</div>
+		<div class="footer-bottom">
+			<p>Copyright 2002-2015. 深圳市顺电连锁股份有限公司 版权所有 粤ICP备13052236号</p>
+			<div class="footer-im">
+				<ul class="im-left">
+					<li><a href="http://61.144.227.239:9002/"><img src="images/police.png" alt=""/><span>网上报警</span></a></li>
+					<li><a href="http://61.144.227.239:9003/beian/netarchive_query.jsp"><img src="images/gaju.png" alt=""/><span>深圳市公安局</span></a></li>
+					<li><a href="http://szcert.ebs.org.cn/fd1af7ce-6232-408b-8fce-33a291b02ea4"><img src="images/gongshang.png" alt=""/><span>工商网监</span></a></li>
+					<li><a href="http://v.t.sina.com.cn/share/share.php?url=http%3A%2F%2Fwww.sundan.com%2F&appkey=3172366919&title=%E9%A1%BA%E7%94%B5%E7%BD%91%E4%B8%8A%E5%95%86%E5%9F%8E(sundan.com)-%E9%AB%98%E7%AB%AF%E5%AE%B6%E7%94%B5%E8%B4%AD%E7%89%A9%E5%95%86%E5%9F%8E%EF%BC%8C%E6%AD%A3%E5%93%81%E4%BF%9D%E9%9A%9C-%E6%94%AF%E6%8C%81%E9%80%81%E8%B4%A7%E4%B8%8A%E9%97%A8%E8%B4%A7%E5%88%B0%E4%BB%98%E6%AC%BE"><img class="footer-xinlang" src="images/xinlangweibo.png" alt=""/><span>关注微博</span></a></li>
+					<li><a href="#"><img src="images/weixin_footer.png" alt=""/><span>关注官微</span></a></li>
+				</ul>
+				<div class="im-right">
+					<a href="http://203.86.25.68:9990/sdb2b/login.action">供应商</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

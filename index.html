@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>顺电网上商城-高端家电购物商城，正品保障-支持送货上门货到付款</title>
+	<link rel="icon" href="http://www.sundan.com/public/app/site/statics/favicon.ico" type="image/x-icon">
+    <script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/function.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- header顶部 -->
+    <div id="header">
+        <div class="header">
+        	<div class="header-logo">
+            	<h1><a href=""><img src="images/logo.png" alt=""></a></h1>
+            </div>
+            <div class="header-main">
+	            <div class="search-bar">
+	            	<input type="text" placeholder="iphone7"/>
+	            	<button type="submit">搜索</button>
+	            	<div class="hots">
+				        <a href="#">电视</a>
+				        <div class="fg"></div>
+				        <a href="#">布鲁雅尔203</a>
+				        <div class="fg"></div>
+				        <a href="#">净化器</a>
+				        <div class="fg"></div>
+				        <a href="#">元旦</a>
+				        <div class="fg"></div>
+				        <a href="#">锤子</a>
+				        <div class="fg"></div>
+				        <a href="#">手机</a>
+				        <div class="fg"></div>
+				        <a href="#">家电</a>
+				        <div class="fg"></div>
+				        <a href="#">电脑</a>
+				        <div class="fg"></div>
+				        <a href="#">摄影空间</a>
+				    </div>
+	            </div>
+	        	<div class="car-bar">
+	        		<a href="#"><div class="car-box"></div></a>
+	        		<div class="car-box-num fix-main-car-num">0</div>
+	        	</div>
+	        	<div class="login-bar">
+	        		<a href="signup.html"><div class="register">注册</div></a>
+	        		<a href="login.html"><div class="login">登入</div></a>
+	        	</div>
+            </div>
+        </div>
+    </div>
+       	
+    <!-- fixed-main侧边栏 -->
+    <div id="fix-main">
+    	<div class="fix-left">   		    	
+	        <div class="fix-main-car fix-com">
+	            <img src="images/index_cart_fix.png" alt=""/>
+	            <div class="fix-main-car-num">0</div>
+	        </div>
+	        <div class="fix-main-love fix-com">
+	            <img src="images/index_favourite_right.png" alt=""/>
+	        </div>
+	        <div class="fix-main-kefu fix-com">
+	            <img src="images/index_fix_right_kefu.png" alt=""/>
+	        </div>
+	        <div class="fix-main-bottom">
+	            <div class="fix-main-erwm fix-bot">
+	                <img src="images/index_fix_erweima.png" alt=""/>
+	                <div class="erwm-active">
+	                	<img src="images/index_erweima.jpg" alt=""/>
+	                </div>
+	            </div>
+	            <div class="fix-main-top fix-bot">
+	                <img src="images/top.png" alt=""/>
+	            </div>
+	            <div class="fix-main-fankui fix-bot">
+	                <img src="images/yonghufankui.png" alt=""/>
+	            </div>
+	        </div>
+	    </div>
+    	<div class="fix-right">
+    		<div class="my-cart">
+    			<div class="top-chose">
+    				<input type="checkbox" name="all_chose" class="all_chose" /><label for="all_chose">全选</label>
+    			</div>
+    			<ul>
+    				<!--<li>
+    					<div class="cart_title"><p>恩斯托（ENSTO）壁挂式电暖器</p></div>
+    					<input type="checkbox" />
+    					<div class="about_goods">
+    						<img src="images/meitu.jpg" alt="" />
+    						<div class="about_p"></div>
+    						<div class="goods_num">
+    							<a href="#">-</a>
+    							<input type="text" value="1"/>
+    							<a href="#">+</a>
+    						</div>
+    						<div class="goods_price">2999.00</div>
+    					</div>
+    					<div class="del_goods"></div>
+    				</li>-->
+    				
+    			</ul>
+    			<div class="bottom_total">
+    				<p><span>已选<b></b>件商品</span><i></i></p>
+    				<button>结算</button>
+    			</div>
+    		</div>
+    		<div class="my-love">
+    			
+    		</div>
+    	</div>
+    	
+    	<div class="index_cart_box">
+    		<div class="close_box">
+    			<a href="##"></a>
+    		</div>
+    		<div class="about_add_goods">
+    			<img src="images/goods/b&o1.jpg"/>
+    			<p><span> B&O Play  H7头戴式耳机(皮革色)</span><i>￥3008.00</i></p>
+    			<h3>加入购物车成功。</h3>
+    			<div class="add_button clearfix">
+    				<button class="buy_conutie">继续购物</button>
+    				<button class="go_cart">去购物车结算</button>
+    			</div>
+    		</div>
+    	</div>
+    
+    </div>
+    <!-- nav导航栏 -->
+    <div id="nav">
+    	<div class="nav">
+	    	<div class="nav-left">
+	    		<span class="nav-left-things">所 有 商 品 分 类</span>
+	    		<ul class="nav-left-list">
+	    			<li class="list-item">
+	    				<a href=""><img class="img_01" src="images/djd01.png" alt="" /><img class="img_02" src="images/djd02.png" alt="" /><span>大家电</span></a>
+	    				<div class="more-list-main" style="display: none; height:380px;background: #fff;position: absolute;left:200px;top:0px;border-right: 1px solid #c1c1c1;">
+	    					<div class="more-top">
+								<div class="more-left more-common">
+									<h2>家用大件</h2>
+									<ul>
+										<li><a href="#" style="color:red">电视</a></li>
+										<li><a href="#">冰箱</a></li>
+										<li><a href="#">空调</a></li>
+										<li><a href="#">洗衣机</a></li>
+										<li><a href="#">酒柜/冷柜</a></li>
+									</ul>
+								</div>
+								<div class="more-center more-common">
+									<h2>厨卫大电</h2>
+									<ul>
+										<li><a href="#">热水器</a></li>
+										<li><a href="#">抽油烟机</a></li>
+										<li><a href="#">炉具</a></li>
+										<li><a href="#">消毒柜</a></li>
+										<li><a href="#">烤箱/蒸箱</a></li>
+										<li><a href="#">洗碗机</a></li>
+									</ul>
+								</div>
+								<div class="more-right more-common">
+									<h2>家庭影院</h2>
+									<ul>
+										<li><a href="#">家庭影院</a></li>
+										<li><a href="#">音响/音箱</a></li>
+										<li><a href="#">DVD播放器</a></li>
+										<li><a href="#">功放机</a></li>
+										<li><a href="#">家庭投影仪</a></li>
+									</ul>
+									<h2>大家电配件</h2>
+									<ul>
+										<li><a href="#">洗衣机配件</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="more-bottom">
+								<img src="images/djd-bottom1.jpg" alt=""/>
+								<img src="images/djd-bottom2.jpg" alt=""/>
+								<img src="images/djd-bottom3.jpg" alt=""/>
+							</div>
+				    	</div>
+	    			</li>
+	    			<li class="list-item">
+	    				<a href=""><img class="img_01" src="images/sjtx01.png" alt="" /><img class="img_02" src="images/sjtx02.png" alt="" /><span>手机通讯</span></a>
+	    				<div class="more-list-main" style="display: none; height:380px;background: #fff;position: absolute;left:200px;top:0px;border-right: 1px solid #c1c1c1;">
+	    					<div class="more-top">
+								<div class="more-left more-common">
+									<h2>通讯</h2>
+									<ul>
+										<li><a href="#" style="color:red">手机</a></li>
+										<li><a href="#">电话机</a></li>
+										<li><a href="#">对讲机</a></li>
+									</ul>
+								</div>
+								<div class="more-center more-common">
+									<h2>手机配件</h2>
+									<ul>
+										<li><a href="#">移动电源</a></li>
+										<li><a href="#">手机壳/套</a></li>
+										<li><a href="#">贴膜</a></li>
+										<li><a href="#">手机存储卡</a></li>
+										<li><a href="#">数据线/充电器</a></li>
+										<li><a href="#">自拍杆</a></li>
+										<li><a href="#">车载配件</a></li>
+									</ul>
+								</div>
+								<div class="more-right more-common">
+
+								</div>
+							</div>
+							<div class="more-bottom">
+								<img src="images/djd-bottom1.jpg" alt=""/>
+								<img src="images/djd-bottom2.jpg" alt=""/>
+								<img src="images/djd-bottom3.jpg" alt=""/>
+							</div>
+				    	</div>
+	    			</li>
+	    			<li class="list-item">
+	    				<a href=""><img class="img_01" src="images/znyl01.png" alt="" /><img class="img_02" src="images/znyl02.png" alt="" /><span>智能/娱乐</span></a>
+	    				<div class="more-list-main" style="display: none; height:380px;background: #fff;position: absolute;left:200px;top:0px;border-right: 1px solid #c1c1c1;">
+	    					<div class="more-top">
+								<div class="more-left more-common">
+									<h2>时尚影音</h2>
+									<ul>
+										<li><a href="#" style="color:red">耳机</a></li>
+										<li><a href="#">桌面音箱/蓝牙音箱</a></li>
+										<li><a href="#">MP3/MP4</a></li>
+										<li><a href="#">收/录音机</a></li>
+									</ul>
+								</div>
+								<div class="more-center more-common">
+									<h2>智能设备</h2>
+									<ul>
+										<li><a href="#">智能手表/手环</a></li>
+										<li><a href="#">VR虚拟现实</a></li>
+										<li><a href="#">智能生活</a></li>
+										<li><a href="#">体感车/助力车</a></li>
+									</ul>
+								</div>
+								<div class="more-right more-common">
+									<h2>学习游戏</h2>
+									<ul>
+										<li><a href="#">游戏电玩</a></li>
+										<li><a href="#">电子书</a></li>
+									</ul>
+									<h2>乐器</h2>
+									<ul>
+										<li><a href="#">钢琴/电子琴</a></li>
+										<li><a href="#">电吉他/电贝司</a></li>
+										<li><a href="#">吉他/贝司</a></li>
+										<li><a href="#">打击乐器</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="more-bottom">
+								<img src="images/djd-bottom1.jpg" alt=""/>
+								<img src="images/djd-bottom2.jpg" alt=""/>
+								<img src="images/djd-bottom3.jpg" alt=""/>
+							</div>
+				    	</div>
+	    			</li>
+	    			<li class="list-item">
+	    				<a href=""><img class="img_01" src="images/smhp01.png" alt="" /><img class="img_02" src="images/smhp02.png" alt="" /><span>数码/航拍</span></a>
+	    				<div class="more-list-main" style="display: none; height:380px;background: #fff;position: absolute;left:200px;top:0px;border-right: 1px solid #c1c1c1;">
+	    					<div class="more-top">
+								<div class="more-left more-common">
+									<h2>摄影摄像</h2>
+									<ul>
+										<li><a href="#" style="color:red">相机</a></li>
+										<li><a href="#">航拍器</a></li>
+										<li><a href="#">摄像机</a></li>
+										<li><a href="#">镜头</a></li>
+										<li><a href="#">望远镜</a></li>
+										<li><a href="#">手持云台</a></li>
+										<li><a href="#">数码相框</a></li>
+									</ul>
+								</div>
+								<div class="more-center more-common">
+									<h2>数码配件</h2>
+									<ul>
+										<li><a href="#">相机包</a></li>
+										<li><a href="#">储存卡/读卡器</a></li>
+										<li><a href="#">相机电池/充电器</a></li>
+										<li><a href="#">镜头防护/清洁套装</a></li>
+										<li><a href="#">三角架/云台</a></li>
+										<li><a href="#">闪光灯/单反手柄</a></li>
+										<li><a href="#">GoPro配件</a></li>
+									</ul>
+								</div>
+								<div class="more-right more-common">
+
+								</div>
+							</div>
+							<div class="more-bottom">
+								<img src="images/djd-bottom1.jpg" alt=""/>
+								<img src="images/djd-bottom2.jpg" alt=""/>
+								<img src="images/djd-bottom3.jpg" alt=""/>
+							</div>
+				    	</div>
+	    			</li>
+	    			<li class="list-item">
+	    				<a href=""><img class="img_01" src="images/dn01.png" alt="" /><img class="img_02" src="images/dn02.png" alt="" /><span>电脑</span></a>
+	    				<div class="more-list-main" style="display: none; height:380px;background: #fff;position: absolute;left:200px;top:0px;border-right: 1px solid #c1c1c1;">
+	    					<div class="more-top">
+								<div class="more-left more-common">
+									<h2>电脑</h2>
+									<ul>
+										<li><a href="#" style="color:red">笔记本电脑</a></li>
+										<li><a href="#">平板电脑</a></li>
+										<li><a href="#">台式电脑</a></li>
+										<li><a href="#">服务器/工作站</a></li>
+										<li><a href="#">显示器</a></li>
+									</ul>
+								</div>
+								<div class="more-center more-common">
+									<h2>电脑外设</h2>
+									<ul>
+										<li><a href="#">鼠标/键盘</a></li>
+										<li><a href="#">U盘</a></li>
+										<li><a href="#" style="color:red">移动硬盘</a></li>
+										<li><a href="#">鼠标垫</a></li>
+										<li><a href="#">电脑包</a></li>
+										<li><a href="#">电脑音箱</a></li>
+										<li><a href="#">摄像头</a></li>
+									</ul>
+								</div>
+								<div class="more-right more-common">
+									<h2>网络设备</h2>
+									<ul>
+										<li><a href="#">路由器/交换机</a></li>
+										<li><a href="#">无线网卡</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="more-bottom">
+								<img src="images/djd-bottom1.jpg" alt=""/>
+								<img src="images/djd-bottom2.jpg" alt=""/>
+								<img src="images/djd-bottom3.jpg" alt=""/>
+							</div>
+				    	</div>
+	    			</li>
+	    			<li class="list-item">
+	    				<a href=""><img class="img_01" src="images/bgsb01.png" alt="" /><img class="img_02" src="images/bgsb02.png" alt="" /><span>办公设备</span></a>
+	    				<div class="more-list-main" style="display: none; height:380px;background: #fff;position: absolute;left:200px;top:0px;border-right: 1px solid #c1c1c1;">
+	    					<div class="more-top">
+								<div class="more-left more-common">
+									<h2>打印设备</h2>
+									<ul>
+										<li><a href="#">多功能打印一体机</a></li>
+										<li><a href="#">单功能打印机</a></li>
+										<li><a href="#">复印机</a></li>
+										<li><a href="#">扫描仪</a></li>
+										<li><a href="#">传真机</a></li>
+									</ul>
+								</div>
+								<div class="more-center more-common">
+									<h2>财务及其它设备</h2>
+									<ul>
+										<li><a href="#">验钞/点钞机</a></li>
+										<li><a href="#">碎纸机</a></li>
+										<li><a href="#">保险柜</a></li>
+										<li><a href="#">录音笔</a></li>
+										<li><a href="#">其它办公设备</a></li>
+									</ul>
+								</div>
+								<div class="more-right more-common">
+									<h2>投影设备</h2>
+									<ul>
+										<li><a href="#">商用投影仪</a></li>
+										<li><a href="#">投影幕</a></li>
+									</ul>
+									<h2>耗材/文具</h2>
+									<ul>
+										<li><a href="#">墨盒</a></li>
+										<li><a href="#">色带</a></li>
+										<li><a href="#">复印纸/相片纸</a></li>
+										<li><a href="#">办公文具</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="more-bottom">
+								<img src="images/djd-bottom1.jpg" alt=""/>
+								<img src="images/djd-bottom2.jpg" alt=""/>
+								<img src="images/djd-bottom3.jpg" alt=""/>
+							</div>
+				    	</div>
+	    			</li>
+	    			<li class="list-item">
+	    				<a href=""><img class="img_01" src="images/cfdq01.png" alt="" /><img class="img_02" src="images/cfdq02.png" alt="" /><span>厨房小家电</span></a>
+	    				<div class="more-list-main" style="display: none; height:380px;background: #fff;position: absolute;left:200px;top:0px;border-right: 1px solid #c1c1c1;">
+	    					<div class="more-top">
+								<div class="more-left more-common">
+									<h2>水设备</h2>
+									<ul>
+										<li><a href="#">净水器</a></li>
+										<li><a href="#">饮水机</a></li>
+										<li><a href="#">电水壶/电热水瓶</a></li>
+									</ul>
+								</div>
+								<div class="more-center more-common">
+									<h2>食物制作</h2>
+									<ul>
+										<li><a href="#" style="color:red">电饭煲</a></li>
+										<li><a href="#">电压力锅</a></li>
+										<li><a href="#">电磁炉/电陶炉</a></li>
+										<li><a href="#">微波炉</a></li>
+										<li><a href="#">炖锅/汤煲</a></li>
+										<li><a href="#">面条机</a></li>
+										<li><a href="#">面包机/多士炉</a></li>
+									</ul>
+								</div>
+								<div class="more-right more-common">
+									<h2>饮品制作</h2>
+									<ul>
+										<li><a href="#">料理/榨汁机</a></li>
+										<li><a href="#">豆浆机</a></li>
+										<li><a href="#">咖啡机</a></li>
+										<li><a href="#">咖啡机配件</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="more-bottom">
+								<img src="images/djd-bottom1.jpg" alt=""/>
+								<img src="images/djd-bottom2.jpg" alt=""/>
+								<img src="images/djd-bottom3.jpg" alt=""/>
+							</div>
+				    	</div>
+	    			</li>
+	    			<li class="list-item">
+	    				<a href=""><img class="img_01" src="images/shdq01.png" alt="" /><img class="img_02" src="images/shdq02.png" alt="" /><span>生活电器</span></a>
+	    				<div class="more-list-main" style="display: none; height:380px;background: #fff;position: absolute;left:200px;top:0px;border-right: 1px solid #c1c1c1;">
+	    					<div class="more-top">
+								<div class="more-left more-common">
+									<h2>环境电器</h2>
+									<ul>
+										<li><a href="#">取暖电器</a></li>
+										<li><a href="#" style="color:red">空气净化器</a></li>
+										<li><a href="#">净化器滤网</a></li>
+										<li><a href="#">风扇</a></li>
+										<li><a href="#">除湿机</a></li>
+										<li><a href="#">加湿器</a></li>
+										<li><a href="#">空调扇</a></li>
+									</ul>
+								</div>
+								<div class="more-center more-common">
+									<h2>居家电器</h2>
+									<ul>
+										<li><a href="#">吸尘器/地宝</a></li>
+										<li><a href="#">挂烫机/电熨斗</a></li>
+										<li><a href="#">清洗机</a></li>
+										<li><a href="#">智能马桶盖</a></li>
+										<li><a href="#">清洁类配件</a></li>
+									</ul>
+								</div>
+								<div class="more-right more-common">
+									<h2>灯具</h2>
+									<ul>
+										<li><a href="#">台灯</a></li>
+										<li><a href="#">电筒</a></li>
+										<li><a href="#">小夜灯</a></li>
+										<li><a href="#">功放机</a></li>
+										<li><a href="#">照明设备/灯具</a></li>
+									</ul>
+									<h2>生活配件</h2>
+									<ul>
+										<li><a href="#">灭蚊</a></li>
+										<li><a href="#">转换器/排插</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="more-bottom">
+								<img src="images/djd-bottom1.jpg" alt=""/>
+								<img src="images/djd-bottom2.jpg" alt=""/>
+								<img src="images/djd-bottom3.jpg" alt=""/>
+							</div>
+				    	</div>
+	    			</li>
+	    			<li class="list-item">
+	    				<a href=""><img class="img_01" src="images/gh01.png" alt="" /><img class="img_02" src="images/gh02.png" alt="" /><span>个户/健康</span></a>
+	    				<div class="more-list-main" style="display: none; height:380px;background: #fff;position: absolute;left:200px;top:0px;border-right: 1px solid #c1c1c1;">
+	    					<div class="more-top">
+								<div class="more-left more-common">
+									<h2>个人护理</h2>
+									<ul>
+										<li><a href="#" style="color:red">剃须刀</a></li>
+										<li><a href="#">电吹风</a></li>
+										<li><a href="#">口腔护理</a></li>
+										<li><a href="#">美发器/理发器</a></li>
+										<li><a href="#">剃/脱毛器</a></li>
+										<li><a href="#">美容器</a></li>
+										<li><a href="#">小型按摩器</a></li>
+									</ul>
+								</div>
+								<div class="more-center more-common">
+									<h2>按摩/健康器材</h2>
+									<ul>
+										<li><a href="#">按摩椅</a></li>
+										<li><a href="#">足浴盆</a></li>
+										<li><a href="#">血压仪/血糖仪</a></li>
+										<li><a href="#">脂肪测量仪</a></li>
+										<li><a href="#">健康秤</a></li>
+										<li><a href="#">制氧机</a></li>
+										<li><a href="#">体温计</a></li>
+									</ul>
+								</div>
+								<div class="more-right more-common">
+									<h2>健身训练</h2>
+									<ul>
+										<li><a href="#">滑板车</a></li>
+										<li><a href="#">跑步机</a></li>
+										<li><a href="#">健身车</a></li>
+										<li><a href="#">椭圆机</a></li>
+										<li><a href="#">综合训练器</a></li>
+										<li><a href="#">其它运动器械</a></li>
+										<li><a href="#">运动配件</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="more-bottom">
+								<img src="images/djd-bottom1.jpg" alt=""/>
+								<img src="images/djd-bottom2.jpg" alt=""/>
+								<img src="images/djd-bottom3.jpg" alt=""/>
+							</div>
+				    	</div>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div class="nav-main">
+	    		<ul class="clearfix">
+			        <li class="nav-item active"><a class="active" href="#" target="_blank">首页</a></li>
+			        <li class="nav-item "><a href="#" target="_blank">新品</a></li>
+			        <li class="nav-item "><a href="#" target="_blank">进口</a></li>
+			        <li class="nav-item "><a href="#" target="_blank">Man</a></li>
+			        <li class="nav-item "><a href="#" target="_blank">限时特惠</a></li>
+			        <li class="nav-item "><a href="#" target="_blank">品牌街</a></li>
+			        <li class="nav-item "><a href="#" target="_blank">积分兑换</a></li>
+			        <li class="nav-item "><a href="#" target="_blank">Apple</a></li>
+			        <li class="nav-item "><a href="#" target="_blank">空气净化器</a></li>
+			    </ul>
+	    	</div>
+    	</div>
+    </div>
+    
+    <div id="nav-box"></div>
+    <!-- banner轮播图 -->
+    <div id="banner">
+    	<div class="index-banenr">
+    		<ul class="banner-list">
+    			<!--<li><a href="#"><img src="images/index_banner01.jpg"/></a></li>
+    			<li><a href="#"><img src="images/index_banner02.jpg"/></a></li>
+    			<li><a href="#"><img src="images/index_banner03.jpg"/></a></li>
+    			<li><a href="#"><img src="images/index_banner04.jpg"/></a></li>
+    			<li><a href="#"><img src="images/index_banner05.jpg"/></a></li>
+    			<li><a href="#"><img src="images/index_banner06.jpg"/></a></li>
+    			<li><a href="#"><img src="images/index_banner07.jpg"/></a></li>  			-->
+    		</ul>
+    		<ul class="banner-list-point">
+    			<!--<li class="active">1</li>
+    			<li>2</li>
+    			<li>3</li>
+    			<li>4</li>
+    			<li>5</li>
+    			<li>6</li>
+    			<li>7</li> 			-->
+			</ul>
+    	</div>
+    </div>
+    <!-- index-main -->
+	<div id="index-main">
+    	<!-- news新品 -->
+	    <div class="news main-common">
+	    	<h2>新品</h2>
+	    	<div class="main-p">
+	    		<span>NEW</span><a href="#">More +</a>
+	    	</div>
+	    	<ul class="news-main clickDetaile">
+	    		<!--<li class="hoveract">
+	    			<div class="news-main-thing">
+		    			<a href="#"><img src="images/meitu.jpg"/></a>
+		    			<h4>【预订】美图meitu  M6s 4GB+64GB  标准版全网通 自拍娱乐手机</h4>
+		    			<p>让你的自拍高清又好看</p>
+		    			<div class="price">￥3199.00</div>
+		    			<div class="add-cart">加入购物车</div>
+	    			</div>
+	    		</li> 
+	    		<li class="hoveract">
+	    			<div class="news-main-thing">
+		    			<a href="#"><img src="images/ensituo.jpg"/></a>
+		    			<h4>恩斯托（ENSTO）壁挂式电暖器 EPHBM15P.CN</h4>
+		    			<p>芬兰原装进口，升温快，安全加热</p>
+		    			<div class="price">￥2999.00</div>
+		    			<div class="add-cart">加入购物车</div>
+	    			</div>
+	    		</li>
+	    		<li class="hoveract">
+	    			<div class="news-main-thing">
+		    			<a href="#"><img src="images/b&oplay.jpg"/></a>
+		    			<h4> B&O Play  H7头戴式耳机(皮革色)</h4>
+		    			<p>可替换充电电池,续航可达20小时左右</p>
+		    			<div class="price">￥3088.00</div>
+		    			<div class="add-cart">加入购物车</div>
+	    			</div>
+	    		</li>
+	    		<li class="hoveract">
+	    			<div class="news-main-thing">
+		    			<a href="#"><img src="images/xiaote.jpg"/></a>
+		    			<h4>小天鹅（LittleSwan）8公斤 带烘干 滚筒洗衣机TD80-1411DXS(银色)</h4>
+		    			<p>带烘干，免熨即穿</p>
+		    			<div class="price">￥3998.00</div>
+		    			<div class="add-cart">加入购物车</div>
+	    			</div>
+	    		</li>-->
+	    	</ul>
+	    </div>
+	    <!-- discovery发现 -->
+	    <div class="discovery main-common">
+	    	<h2>发现</h2>
+	    	<div class="main-p">
+	    		<span>DISCOVERY</span><a href="#">More +</a><a href="#">iPhone配件</a><a href="#">冰洗汇聚</a><a href="#" style="color:red">取暖器</a>
+	    	</div>
+	    	<div class="discovery-main">
+	    		<div class="discovery-left">
+	    			<div class="discovery-left-top discovery-common">
+	    				<a href="#">
+	    					<img src="images/applezq.jpg" alt=""/>
+	    					<div class="discovery-p">授权经销商</div>
+	    				</a>
+	    			</div>
+	    			<div class="discovery-left-bottom">
+	    				<div class="d-l-b-left discovery-common">
+		    				<a href="#">
+		    					<img src="images/airzq.jpg" alt=""/>
+		    					<div class="discovery-p">品牌汇聚 还你清新境界</div>
+		    				</a>
+	    				</div>
+	    				<div class="d-l-b-right discovery-common">
+		    				<a href="#">
+		    					<img src="images/tvzq.jpg" alt=""/>
+		    					<div class="discovery-p">经典热销 不落幕</div>
+		    				</a>
+		    			</div>
+	    			</div>
+	    		</div>
+	    		<div class="discovery-right">
+	    			<div class="right-top">
+	    				<div class="d-r-t-left  discovery-common">
+	    					<a href="#">
+	    					<img src="images/computerzq.jpg" alt=""/>
+	    					<div class="discovery-p">办公有我，在你的世界停留</div>
+	    				</a>
+	    				</div>
+	    				<div class="d-r-t-right  discovery-common">
+	    					<a href="#">
+	    					<img src="images/musiczq.jpg" alt=""/>
+	    					<div class="discovery-p">街拍出行，沉浸在音乐的世界</div>
+	    					</a>
+	    				</div>
+	    			</div>
+	    			<div class="right-center  discovery-common">
+	    				<a href="#">
+	    					<img src="images/camarezq.jpg" alt=""/>
+	    					<div class="discovery-p">清新影像，留下一路的风景</div>
+	    				</a>
+	    			</div>
+	    			<div class="right-bottom">
+	    				<div class="d-r-b-left  discovery-common">
+	    					<a href="#">
+	    					<img src="images/huzq.jpg" alt=""/>
+	    					<div class="discovery-p">生活遇见最美好的自己</div>
+	    				</a>
+	    				</div>
+	    				<div class="d-r-b-right  discovery-common">
+	    					<a href="#">
+	    					<img src="images/phonezq.jpg" alt=""/>
+	    					<div class="discovery-p">总有一款适合你</div>
+	    					</a>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="discovery-bottom">
+	    		<a href=""><img src="images/discovery-bottom.jpg" alt=""/></a>
+	    	</div>
+	    </div>
+	    <!--  man男士  -->
+	    <div class="man main-common">
+	    	<h2>Man</h2>
+	    	<div class="main-p">
+	    		<span>BE A MR FASHION</span><a href="#">More +</a><a href="#">跑步</a><a href="#">户外</a><a href="#">游戏</a><a href="#">品味</a><a href="#">科技</a><a href="#">护理</a>
+	    	</div>
+	    	<div class="discovery-main">
+	    		<div class="discovery-left">
+	    			<div class="discovery-left-top discovery-common">
+	    				<a href="#">
+	    					<img src="images/man01.jpg" alt=""/>
+	    					<div class="discovery-p">音乐：感受别的故事，让自己的内心安静一会儿</div>
+	    				</a>
+	    			</div>
+	    			<div class="discovery-left-bottom">
+	    				<div class="d-l-b-left discovery-common">
+		    				<a href="#">
+		    					<img src="images/man02.jpg" alt=""/>
+		    					<div class="discovery-p">浪漫：爱情的调味品</div>
+		    				</a>
+	    				</div>
+	    				<div class="d-l-b-right discovery-common">
+		    				<a href="#">
+		    					<img src="images/man03.jpg" alt=""/>
+		    					<div class="discovery-p">极客：我要征服世界</div>
+		    				</a>
+		    			</div>
+	    			</div>
+	    		</div>
+	    		<div class="discovery-right">
+	    			<div class="right-top">
+	    				<div class="d-r-t-left  discovery-common">
+	    					<a href="#">
+	    					<img src="images/man04.jpg" alt=""/>
+	    					<div class="discovery-p">游戏：激发我的斗志</div>
+	    				</a>
+	    				</div>
+	    				<div class="d-r-t-right  discovery-common">
+	    					<a href="#">
+	    					<img src="images/man05.jpg" alt=""/>
+	    					<div class="discovery-p">科技：只为兴趣买单</div>
+	    					</a>
+	    				</div>
+	    			</div>
+	    			<div class="right-center  discovery-common">
+	    				<a href="#">
+	    					<img src="images/man06.jpg" alt=""/>
+	    					<div class="discovery-p">相机：记录自然，记录回忆，记录所有的美</div>
+	    				</a>
+	    			</div>
+	    			<div class="right-bottom">
+	    				<div class="d-r-b-left  discovery-common">
+	    					<a href="#">
+	    					<img src="images/man07.jpg" alt=""/>
+	    					<div class="discovery-p">健身：家中私人教练</div>
+	    				</a>
+	    				</div>
+	    				<div class="d-r-b-right  discovery-common">
+	    					<a href="#">
+	    					<img src="images/man08.jpg" alt=""/>
+	    					<div class="discovery-p">型男：原来可以如此有型</div>
+	    					</a>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="discovery-bottom">
+	    		<a href=""><img src="images/man-bottom.jpg" alt=""/></a>
+	    	</div>
+	    </div>
+	    <!--  home家  -->
+	    <div class="home main-common">
+	    	<h2>家</h2>
+	    	<div class="main-p">
+	    		<span>QUALITY LIFE</span><a href="#">More +</a><a href="#">书房</a><a href="#">厨房</a><a href="#">卫生间</a><a href="#">卧室</a><a href="#">客厅</a>
+	    	</div>
+	    	<div class="discovery-main">
+	    		<div class="discovery-left">
+	    			<div class="discovery-left-top discovery-common">
+	    				<a href="#">
+	    					<img src="images/home01.jpg" alt=""/>
+	    					<div class="discovery-p">厨房&nbsp;&nbsp;&nbsp;&nbsp;和家人、朋友一起分享美食的快乐</div>
+	    				</a>
+	    			</div>
+	    			<div class="discovery-left-bottom">
+	    				<div class="d-l-b-left discovery-common">
+		    				<a href="#">
+		    					<img src="images/home02.jpg" alt=""/>
+		    					<div class="discovery-p">钟于现代厨房体验，从此爱上厨房</div>
+		    				</a>
+	    				</div>
+	    				<div class="d-l-b-right discovery-common">
+		    				<a href="#">
+		    					<img src="images/home03.jpg" alt=""/>
+		    					<div class="discovery-p">拂去一天的疲惫</div>
+		    				</a>
+		    			</div>
+	    			</div>
+	    		</div>
+	    		<div class="discovery-right">
+	    			<div class="right-top">
+	    				<div class="d-r-t-left  discovery-common">
+	    					<a href="#">
+	    					<img src="images/home04.jpg" alt=""/>
+	    					<div class="discovery-p">在静谧中，点亮你的灵感之光</div>
+	    				</a>
+	    				</div>
+	    				<div class="d-r-t-right  discovery-common">
+	    					<a href="#">
+	    					<img src="images/home05.jpg" alt=""/>
+	    					<div class="discovery-p">每一天轻柔呵护，洁净如新</div>
+	    					</a>
+	    				</div>
+	    			</div>
+	    			<div class="right-center  discovery-common">
+	    				<a href="#">
+	    					<img src="images/home06.jpg" alt=""/>
+	    					<div class="discovery-p">有你，每天都是新视界</div>
+	    				</a>
+	    			</div>
+	    			<div class="right-bottom">
+	    				<div class="d-r-b-left  discovery-common">
+	    					<a href="#">
+	    					<img src="images/home07.jpg" alt=""/>
+	    					<div class="discovery-p">娱乐办公，一应俱全</div>
+	    				</a>
+	    				</div>
+	    				<div class="d-r-b-right  discovery-common">
+	    					<a href="#">
+	    					<img src="images/home08.jpg" alt=""/>
+	    					<div class="discovery-p">风随心动，智能为你</div>
+	    					</a>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="discovery-bottom">
+	    		<a href=""><img src="images/home-bottom.jpg" alt=""/></a>
+	    	</div>
+	    </div>
+	    <!--  food味  -->
+	    <div class="food main-common">
+	    	<h2>味</h2>
+	    	<div class="main-p">
+	    		<span>DELICIOUS FOOD</span><a href="#">More +</a><a href="#">下午茶</a><a href="#">健康瘦身</a><a href="#">早餐</a>
+	    	</div>
+	    	<div class="food-main">
+	    		<div class="food-left">
+	    			<div class="food-item">
+	    				<a href="#">
+	    					<img src="images/food01.jpg" alt=""/>
+	    					<div class="food-active">
+	    						<h2>百变煮意</h2>
+	    						<h2>我自随心炖制</h2>
+	    					</div>
+	    				</a>
+	    			</div>
+	    			<div class="food-item food-item-bottom">
+	    				<a href="#">
+	    					<img src="images/food02.jpg" alt=""/>
+	    					<div class="food-active">
+	    						<h2>幸福滋味</h2>
+	    						<h2>在温暖中膨胀</h2>
+	    					</div>
+	    				</a>
+	    			</div>
+	    		</div>
+	    		<div class="food-right">
+	    			<div class="food-item">
+	    				<a href="#">
+	    					<img src="images/food03.jpg" alt=""/>
+	    					<div class="food-active">
+	    						<h2>品味香浓</h2>
+	    						<h2>纵享惬意生活</h2>
+	    					</div>
+	    				</a>
+	    			</div>
+	    			<div class="food-item food-item-bottom">
+	    				<a href="#">
+	    					<img src="images/food04.jpg" alt=""/>
+	    					<div class="food-active">
+	    						<h2>健康营养</h2>
+	    						<h2>榨出生活点滴</h2>
+	    					</div>
+	    				</a>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="discovery-bottom">
+	    		<a href=""><img src="images/food-bottom.jpg" alt=""/></a>
+	    	</div>
+	    </div>
+	    <!--  season四季  -->
+	    <div class="season main-common">
+	    	<h2>四季</h2>
+	    	<div class="main-p">
+	    		<span>SEASON UPDATES</span><a href="#">炎热</a><a href="#">潮湿</a><a href="#">干燥</a><a href="#">寒冷</a><a href="#">雾霾</a>
+	    	</div>
+	    	<div class="season-main">
+	    		<div class="season-top">
+			    	<div class="season-left discovery-common">
+						<a href="#">
+							<img src="images/season01.jpg" alt=""/>
+							<div class="discovery-p">洁净呼吸，清新世界</div>
+						</a>
+					</div>
+					<div class="season-right">
+						<ul class="clickDetaile">
+							<!--<li class="season-item hoveract">
+								<div class="news-main-thing">
+					    			<a href="#"><img src="images/season-item01.jpg"/></a>
+					    			<h4>美的（Midea）油汀NY2513-15C</h4>
+					    			<p>多维速热管，恒温导热油</p>
+					    			<div class="price">￥759.00</div>
+					    			<div class="add-cart">加入购物车</div>
+				    			</div>
+							</li>
+							<li class="season-item hoveract">
+								<div class="news-main-thing">
+					    			<a href="#"><img src="images/season-item02.jpg"/></a>
+					    			<h4>德龙（Delonghi）电油汀 TRD40820T</h4>
+					    			<p>欧洲品质，使用进口整卷钢板，优质导热油</p>
+					    			<div class="price">￥990.00</div>
+					    			<div class="add-cart">加入购物车</div>
+				    			</div>
+							</li>
+						-->
+						</ul>
+					</div>
+	    		</div>
+				<ul class="season-list clickDetaile">
+					<!--<li class="season-item hoveract">
+						<div class="news-main-thing">
+			    			<a href="#"><img src="images/season-item03.jpg"/></a>
+			    			<h4>布鲁雅尔（Blueair）空气净化器 503</h4>
+			    			<p>5次循环专注品质、标定面积54㎡</p>
+			    			<div class="price">￥5509.00</div>
+			    			<div class="add-cart">加入购物车</div>
+		    			</div>
+					</li>
+					<li class="season-item hoveract">
+						<div class="news-main-thing">
+			    			<a href="#"><img src="images/season-item04.jpg"/></a>
+			    			<h4>【韩国进口】陆且世（LLUCEX）宝石红远红外线超声波加湿器 LC-1190Ll</h4>
+			    			<p>设计美观，底部加装红外灯</p>
+			    			<div class="price">￥1099.00</div>
+			    			<div class="add-cart">加入购物车</div>
+		    			</div>
+					</li>
+					<li class="season-item hoveract">
+						<div class="news-main-thing">
+			    			<a href="#"><img src="images/season-item05.jpg"/></a>
+			    			<h4>美的(Midea)  省电星 小1匹 定频单冷 分体式空调 KF-23GW/Y-DA400(D3)  (白色)  【此商品仅限广东部分地区销售，详情请咨询客服！】</h4>
+			    			<p>高密度滤尘网， 独立除湿</p>
+			    			<div class="price">￥1729.00</div>
+			    			<div class="add-cart">加入购物车</div>
+		    			</div>
+					</li>
+					<li class="season-item hoveract">
+						<div class="news-main-thing">
+			    			<a href="#"><img src="images/season-item06.jpg"/></a>
+			    			<h4>海信（Hisense）3匹  冷暖分体 变频 柜式 空调KFR-72LW/A8X700Z-A2(2N01)（白）</h4>
+			    			<p>圆柱艺术化形态，高亮LED显示</p>
+			    			<div class="price">￥7999.00</div>
+			    			<div class="add-cart">加入购物车</div>
+		    			</div>
+					</li>-->
+				</ul>
+	    	</div>
+	    </div>
+	    <!--  sales特价  -->
+	    <div class="sales main-common">
+	    	<h2>特价</h2>
+	    	<div class="main-p">
+	    		<span>Sales OFF</span><a class="sales-next"><img src="images/index_n.jpg"/></a><a class="sales-prev"><img src="images/index_p.jpg"/></a>
+	    	</div>
+	    	<div class="sales-main">
+	    		<ul class="sales-list  clickDetaile">
+	    			<!--<li class="sales-item hoveract">
+	    				<div class="sales-thing">
+			    			<a href="#"><img src="images/sales-item01.jpg"/></a>
+			    			<h4>【立减220元】魔声蓝牙运动耳机</h4>
+			    			<div class="price">￥759.00</div><span class="sales-price">￥759.00</span>
+			    			<div class="add-cart">加入购物车</div>
+		    			</div>
+	    			</li>
+	    			<li class="sales-item hoveract">
+	    				<div class="sales-thing">
+			    			<a href="#"><img src="images/sales-item02.jpg"/></a>
+			    			<h4>【立减200元】华为麦芒5 4GB 64GB 全网通手机</h4>
+			    			<div class="price">￥2599.00</div><span class="sales-price">￥2599.00</span>
+			    			<div class="add-cart">加入购物车</div>
+		    			</div>
+	    			</li>
+	    			<li class="sales-item hoveract">
+	    				<div class="sales-thing">
+			    			<a href="#"><img src="images/sales-item03.jpg"/></a>
+			    			<h4>产地日本 进口佳能（Canon）EOS M10 微型可换镜头数码相机 双镜头套装 (EF-M 15-45 IS / EF-M 55-200 ) （黑色）</h4>
+			    			<div class="price">￥3899.00</div><span class="sales-price">￥4399.00</span>
+			    			<div class="add-cart">加入购物车</div>
+		    			</div>
+	    			</li>
+	    			<li class="sales-item hoveract">
+	    				<div class="sales-thing">
+			    			<a href="#"><img src="images/sales-item04.jpg"/></a>
+			    			<h4>Apple iPhone 7 移动联通电信4G手机 </h4>
+			    			<div class="price">￥5088.00</div><span class="sales-price">￥6888.00</span>
+			    			<div class="add-cart">加入购物车</div>
+		    			</div>
+	    			</li>
+	    			<li class="sales-item hoveract">
+	    				<div class="sales-thing">
+			    			<a href="#"><img src="images/sales-item05.jpg"/></a>
+			    			<h4>飞利浦(phlips) 55英寸 4K智能 平面 液晶电视 55PUF6850/T3</h4>
+			    			<div class="price">￥6509.00</div><span class="sales-price">￥6509.00</span>
+			    			<div class="add-cart">加入购物车</div>
+		    			</div>
+	    			</li>
+	    		-->
+	    		</ul>
+	    	</div>
+	    </div>
+    </div>
+	<!--  help  -->
+	<div id="help">
+		<div class="help-main">
+			<div class="help-item">
+				<img src="images/zp.png"/>
+				<p>正品保证</p>
+			</div>
+			<div class="help-item">
+				<img src="images/vip.png"/>
+				<p>会员独享</p>
+			</div>
+			<div class="help-item">
+				<img src="images/bao.png"/>
+				<p>全国联保</p>
+			</div>
+			<div class="help-item">
+				<img src="images/30.png"/>
+				<p>30天超长退货</p>
+			</div>
+			<div class="help-item">
+				<img src="images/Awesome-Projects.png"/>
+				<p>正规发票</p>
+			</div>
+		</div>
+	</div>
+	<!--  footer  -->
+	<div id="footer">
+		<div class="footer-tel">
+			<div class="footer-tel-item">
+				<h5>订购热线</h5>
+				<p class="tel-timer">订购服务时间: 08:30 - 17:30</p>
+				<p class="tel-num">400-8899-618</p>
+			</div>
+			<div class="footer-tel-item">
+				<h5>企业购热线</h5>
+				<p class="tel-timer">企业购热线时间: 09:00 - 17:30</p>
+				<p class="tel-num">0755-83286903</p>
+			</div>
+			<div class="footer-tel-item">
+				<h5>售后服务热线</h5>
+				<p class="tel-timer">售后热线时间: 09:00 - 22:00</p>
+				<p class="tel-num">400-6788-688</p>
+			</div>
+			<div class="footer-tel-item">
+				<h5>在线客服咨询</h5>
+				<p class="tel-timer">服务时间: 08:30 - 24:00</p>
+				<p class="tel-kf">在线客服 即时答疑</p>
+			</div>
+		</div>
+		<div class="footer-about">
+			<div class="footer-about-left">
+				<div class="footer-left-item">
+					<h5>新手指引</h5>
+					<ul>
+						<li><a href="#" style="font-weight: 100;">交易须知</a></li>
+						<li><a href="#">开具发票</a></li>
+						<li><a href="#">联系客服</a></li>
+						<li><a href="#">会员登录小贴士</a></li>
+					</ul>
+				</div>
+				<div class="footer-left-item">
+					<ul>
+						<li><a href="#">支付及配送</a></li>
+						<li><a href="#">在线支付</a></li>
+						<li><a href="#">汇款转账</a></li>
+						<li><a href="#">货到付款</a></li>
+						<li><a href="#">运费政策</a></li>
+						<li><a href="#">配送方式</a></li>
+					</ul>
+				</div>
+				<div class="footer-left-item">
+					<ul>
+						<li><a href="#">订单及售后</a></li>
+						<li><a href="#">订单说明</a></li>
+						<li><a href="#">退款说明</a></li>
+						<li><a href="#">售后政策</a></li>
+						<li><a href="#">售后申请</a></li>
+					</ul>
+				</div>
+				<div class="footer-left-item">
+					<ul>
+						<li><a href="#">关于顺电</a></li>
+						<li><a href="#">品牌故事</a></li>
+						<li><a href="#">投资者关系</a></li>
+						<li><a href="#">联系方式</a></li>
+						<li><a href="#">网站合作</a></li>
+						<li><a href="#">人才招聘</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-about-right">
+				<h5>门店体验店</h5>
+				<p>深圳市顺电连锁股份有限公司，是一家专门销售家用电器(包括手机、电脑、数码相机)的零售商。顺电每一家门店有以下特点:高品质商品、丰富选择、专业服务。</p>
+				<div class="footer-dq">
+					<a href="#"><span>北京</span></a><a href="#"><span>广州</span></a>
+					<a href="#"><span>上海</span></a><a href="#"><span>苏州</span></a>
+					<a href="#"><span>深圳</span></a><a href="#"><span>更多</span></a>
+				</div>
+			</div>		
+		</div>
+		<div class="footer-bottom">
+			<p>Copyright 2002-2015. 深圳市顺电连锁股份有限公司 版权所有 粤ICP备13052236号</p>
+			<div class="footer-im">
+				<ul class="im-left">
+					<li><a href="http://61.144.227.239:9002/"><img src="images/police.png" alt=""/><span>网上报警</span></a></li>
+					<li><a href="http://61.144.227.239:9003/beian/netarchive_query.jsp"><img src="images/gaju.png" alt=""/><span>深圳市公安局</span></a></li>
+					<li><a href="http://szcert.ebs.org.cn/fd1af7ce-6232-408b-8fce-33a291b02ea4"><img src="images/gongshang.png" alt=""/><span>工商网监</span></a></li>
+					<li><a href="http://v.t.sina.com.cn/share/share.php?url=http%3A%2F%2Fwww.sundan.com%2F&appkey=3172366919&title=%E9%A1%BA%E7%94%B5%E7%BD%91%E4%B8%8A%E5%95%86%E5%9F%8E(sundan.com)-%E9%AB%98%E7%AB%AF%E5%AE%B6%E7%94%B5%E8%B4%AD%E7%89%A9%E5%95%86%E5%9F%8E%EF%BC%8C%E6%AD%A3%E5%93%81%E4%BF%9D%E9%9A%9C-%E6%94%AF%E6%8C%81%E9%80%81%E8%B4%A7%E4%B8%8A%E9%97%A8%E8%B4%A7%E5%88%B0%E4%BB%98%E6%AC%BE"><img class="footer-xinlang" src="images/xinlangweibo.png" alt=""/><span>关注微博</span></a></li>
+					<li><a href="#"><img src="images/weixin_footer.png" alt=""/><span>关注官微</span></a></li>
+				</ul>
+				<div class="im-right">
+					<a href="http://203.86.25.68:9990/sdb2b/login.action">供应商</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div id="louti">
+		<ul>
+			<li>新品</li>
+			<li>发现</li>
+			<li>Man</li>
+			<li>家</li>
+			<li>味</li>
+			<li>四季</li>
+			<li>特价</li>
+		</ul>
+		<div class="fix-main-top"></div>
+	</div>
+	
+	
+</body>
+</html>
